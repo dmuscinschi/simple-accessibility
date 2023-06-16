@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessibility</title>
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__left">
+        <img class="logo" alt="Logo" src="./assets/svg/Logo.svg" />
+
+        <nav class="navigation">
+          <ul class="navigation__items">
+            <li class="navigation__item">
+              <a href="#"> About Us </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#"> Contact Us </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#"> Blog </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#"> Site Map </a>
+            </li>
+            <li class="navigation__item">
+              <select name="select" id="select" class="navigation__select">
+                <option value="Eng">Eng</option>
+                <option value="Ro">Ro</option>
+                <option value="Ru">Ru</option>
+                <option value="Es">Es</option>
+                <option value="It">It</option>
+              </select>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <form class="search">
+        <input type="text" placeholder="Search this site" class="search__input" />
+        <button type="submit" class="search__button">
+          <img src="./assets/svg/Search.svg" alt="Search" />
+        </button>
+      </form>
+    </header>
+
+    <main>
+      <section class="lorem-ipsum">
+        <div class="lorem-ipsum__container">
+          <div class="lorem-ipsum__left">
+            <h1 class="lorem-ipsum__title">Lorem ipsum dolor sit amet</h1>
+            <h2 class="lorem-ipsum__subtitle">Lorem ipsum dolor sit amet</h2>
+            <p class="lorem-ipsum__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend tincidunt posuere eu
+              risus cursus. Senectus sed maecenas viverra tempus at. Nulla aliquam ac diam amet,
+              sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Nulla aliquam ac diam amet,
+              sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit.
+            </p>
+            <button class="primary-button">Buy Now</button>
+          </div>
+          <div class="lorem-ipsum__right">
+            <img src="./assets/png/main-section-image.png" alt="Plant leaves1" />
+          </div>
+        </div>
+      </section>
+
+      <section class="about-us container">
+        <div class="about-us__left">
+          <div class="about-us__image">
+            <img src="./assets/png/about-us.png" alt="about us" />
+          </div>
+          <div class="about-us__content">
+            <h2 class="about-us__title">About Us</h2>
+            <p class="about-us__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend tincidunt posuere eu
+              risus cursus. Senectus sed maecenas viverra tempus at. Nulla aliquam ac diam amet,
+              sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Nulla aliquam ac diam amet,
+              sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Eleifend tincidunt posuere eu risus cursus.
+            </p>
+            <a href="#" class="about-us__link">Learn more about →</a>
+          </div>
+        </div>
+        <div class="about-us__right">
+          <div class="about-us__image">
+            <img src="./assets/png/about-us.png" alt="about us" />
+          </div>
+          <div class="about-us__content">
+            <h2 class="about-us__title">About Us 2</h2>
+            <p class="about-us__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend tincidunt posuere eu
+              risus cursus. Senectus sed maecenas viverra tempus at. Nulla aliquam ac diam amet,
+              sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Nulla aliquam ac diam amet,
+              sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Eleifend tincidunt posuere eu risus cursus.
+            </p>
+            <a href="#" class="about-us__link">Learn more about →</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-us">
+        <div class="container">
+          <div class="contact-us__container">
+            <div class="contact-us__left">
+              <img src="./assets/png/contact-us.png" alt="Contact us" />
+              <div class="contact-us__content">
+                <h2 class="contact-us__title">Contact Us</h2>
+                <p class="contact-us__description">
+                  Fill up the form and ur Team will get back to you within 24 hours. Happy to see
+                  your message!
+                </p>
+                <div class="contact-us__contacts">
+                  <div class="contact-us__contact">
+                    <img src="./assets/svg/facebook-icon.svg" alt="facebook icon" />
+                    <span>+380 93 15 32 456</span>
+                  </div>
+                  <div class="contact-us__contact">
+                    <img src="./assets/svg/facebook-icon.svg" alt="facebook icon" />
+                    <span>example@gmail.com</span>
+                  </div>
+                  <div class="contact-us__contact">
+                    <img src="./assets/svg/facebook-icon.svg" alt="facebook icon" />
+                    <span>Pidmurma 5a, Lviv</span>
+                  </div>
+                </div>
+
+                <div class="contact-us__logos">
+                  <img src="./assets/svg/facebook-icon.svg" alt="facebook icon" />
+                  <img src="./assets/svg/facebook-icon.svg" alt="facebook icon" />
+                  <img src="./assets/svg/facebook-icon.svg" alt="facebook icon" />
+                </div>
+              </div>
+            </div>
+
+            <form class="contact-us__right">
+              <div class="contact-us__inputs-group">
+                <div class="contact-us__input-group">
+                  <label for="firstName"> First Name </label>
+                  <input type="text" id="firstName" class="contact-us__input" />
+                </div>
+                <div class="contact-us__input-group">
+                  <label for="lastName"> Last Name </label>
+                  <input type="text" id="lastName" class="contact-us__input" />
+                </div>
+              </div>
+
+              <div class="contact-us__inputs-group">
+                <div class="contact-us__input-group">
+                  <label for="email"> Last Name </label>
+                  <input type="text" id="email" class="contact-us__input" />
+                </div>
+                <div class="contact-us__input-group">
+                  <label for="phoneNumber"> Phone Number </label>
+                  <div class="contact-us__phone-number">
+                    <select>
+                      <option value="+380">+380</option>
+                      <option value="+381">+381</option>
+                      <option value="+382">+382</option>
+                    </select>
+                    <input type="text" id="phoneNumber" class="contact-us__input" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-us__radio-buttons">
+                <label for="ui-developer">
+                  <input type="radio" name="ui-developer" id="ui-developer" class="radio-button" />
+                  UI Developer
+                </label>
+                <label for="ui-ux-designer">
+                  <input
+                    type="radio"
+                    name="ui-ux-designer"
+                    id="ui-ux-designer"
+                    class="radio-button"
+                  />
+                  UI/UX Designer
+                </label>
+                <label for="accessibility-expert">
+                  <input
+                    type="radio"
+                    name="accessibility-expert"
+                    id="accessibility-expert"
+                    class="radio-button"
+                  />
+                  Accessibility Expert
+                </label>
+                <label for="qa-engineer">
+                  <input type="radio" name="qa-engineer" id="qa-engineer" class="radio-button" />
+                  QA Engineer
+                </label>
+                <label for="other">
+                  <input type="radio" name="other" id="other" class="radio-button" />
+                  Other
+                </label>
+              </div>
+
+              <div class="contact-us__textarea">
+                <label for="textarea">
+                  Message
+                  <textarea
+                    name="textarea"
+                    id="textarea"
+                    cols="30"
+                    rows="10"
+                    placeholder="Enter text here"
+                  ></textarea>
+                </label>
+              </div>
+
+              <div class="contact-us__checkboxes">
+                <label for="accept-checkbox">
+                  <input type="checkbox" name="accept-checkbox" id="accept-checkbox" />
+                  Accept the Terms
+                </label>
+
+                <label for="accept1-checkbox">
+                  <input type="checkbox" name="accept1-checkbox" id="accept1-checkbox" />
+                  Accept the Terms 2
+                </label>
+              </div>
+
+              <button type="submit" class="primary-button send-message">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__subscribe">
+          <h2 class="footer__title">PlantMe</h2>
+          <p class="footer__subtitle">
+            Subscribe and be the first to know about our news and promotions.
+          </p>
+          <form class="subscribe-form">
+            <input type="text" aria-label="Subscribe" placeholder="example@gmail.com" />
+            <button type="submit" class="primary-button">Subscribe</button>
+          </form>
+        </div>
+
+        <nav class="footer__nav">
+          <ul class="footer__links">
+            <li class="footer__link"><a href="#">About Us</a></li>
+            <li class="footer__link"><a href="#">Contact Us</a></li>
+            <li class="footer__link"><a href="#">Blog</a></li>
+            <li class="footer__link"><a href="#">Site Map</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__contacts">
+          <div>Contacts</div>
+          <a href="tel:+38 063 072 0121">+38 063 072 0121</a>
+          <a href="mailto:plantme.store@gmail.com">plantme.store@gmail.com</a>
+
+          <div class="payment-methods">
+            <img src="./assets/png/visa.png" alt="visa" />
+            <img src="./assets/png/mastercard.png" alt="mastercard" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
